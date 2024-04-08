@@ -1,0 +1,99 @@
+.special-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.top-section{
+    margin-top:5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:70rem;
+}
+.section-title{
+    margin-left:2.5rem;
+}
+.btn{
+    width:15rem;
+    height:2.5rem;
+    background-color: #F4CE14;
+    color: black;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+    margin-right: 2.5rem;
+}
+.card-container{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 2rem;
+    width:70rem;
+}
+.card{
+     width:17rem;
+     background-color: #F2F1F1;
+     border-top-left-radius: 15px;
+     border-top-right-radius:15px;
+     
+}
+.dish{
+    width:100%;
+    height:12rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius:15px;
+    
+}
+.dish-name{
+    font-family:'Markazi';
+    font-size:1.12rem;
+    margin-left: 0.5rem;
+
+}   
+.dish-description{
+    font-family: 'Karla';
+    font-size:1rem ;
+    margin-left:0.5rem;
+    margin-bottom: 0;
+}
+.bottom-card{
+    display: flex;
+    align-items: center;
+    
+}
+.card-container > .card:nth-child(1) .bottom-card {
+    margin-top:1.2rem;
+  }
+  
+ 
+  .card-container > .card:nth-child(3) .bottom-card {
+    margin-top:3.6rem;
+  }
+.bottom-card p{
+   margin-left: 0.5rem;
+  font-family:'Markazi';
+  font-size:1rem;
+   font-weight: bold;
+  
+}
+.bottom-card img{
+    margin-left:2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+
+
+@media( max-width:768px){
+ 
+}
+
+
+@media( min-width:768px) and ( max-width:1324px){
+
+
+}
+@media( min-width:1324px){
+ 
+
+}

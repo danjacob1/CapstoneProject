@@ -2,8 +2,10 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     border: 0.1rem solid;
-     border-color:  black;
+     border: 1px solid;
+     position:fixed;
+     background-color: white;
+     width:100%;
 
 }
 .img-container{
@@ -19,7 +21,7 @@
     display: flex;
     width: 70rem;
     justify-content:space-around;
-    margin-right:10rem;
+    margin-right:18rem;
     list-style-type: none;
 }
 .nav-links li a{
@@ -29,4 +31,21 @@
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
+}
+
+@media( max-width:768px){
+.nav-links li a{
+    font-size:0.75rem;
+}
+}
+@media( min-width:768px) and ( max-width:1324px){
+   
+.nav-links li a{
+ font-size: 1rem;
+}
+
+}
+@media( min-width:1324px){
+
+
 }
