@@ -1,14 +1,14 @@
 import React from "react";
 import Specials from "./specials";
-import Testimonials from "./testimonial";
 import About from "./about";
+import TestimonialsContainer from "./testimonial";
 
 const Main=()=>{
 
     return(
         <>  <main>
             <Specials/>
-            <Testimonials/>
+            <TestimonialsContainer/>
             <About/>
             </main>
         </>

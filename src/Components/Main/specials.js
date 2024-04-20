@@ -1,5 +1,5 @@
 import React from "react";
-import bruschetta from '../../Util/icons_assets/bruchetta.svg';
+import bruschetta from '../../Util/icons_assets/gourmet-5619887_640.jpg';
 import salad from '../../Util/icons_assets/greek salad.jpg';
 import desert from '../../Util/icons_assets/lemon dessert.jpg';
 import scooter from '../../Util/icons_assets/icons8-scooter-delivery-53.png'

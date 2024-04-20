@@ -1,0 +1,53 @@
+.footer-container {
+    display: flex;
+    justify-content:space-around;
+    flex-direction:row;
+    align-items:top;
+    background-color: #333333; /* Change the background color as needed */
+    color: gray; /* Change the text color as needed */
+    padding: 20px;
+  }
+  
+  .list-container {
+  flex: 1;
+  }
+  
+  .list-title {
+    font-size: 1.2rem;
+    font-family: 'Karla' ;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    font-family: 'Karla';
+    font-size:0.90rem;
+  }
+  a:hover{
+     color:black;
+     background-color: white;
+     border-radius: 5px;
+  }
+  a {
+    color:white; /* Change the link color as needed */
+    text-decoration: none;
+  }
+  
+  .image{
+  
+    flex: 1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image img {
+    width: 300px; /* Adjust the image size as needed */
+    border-radius: 5px;
+
+  }
+  

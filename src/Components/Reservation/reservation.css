@@ -1,0 +1,76 @@
+
+.section{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  border:1px solid;
+  
+  
+}
+.form-container {
+  position: relative;
+  width: 30rem;
+  height: 42em;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+
+.form {
+  display: grid;
+  gap: 20px;
+}
+
+.top-form,
+.mid-form,
+.bottom-form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  font-family: 'Markazi';
+}
+
+.error-message {
+  color: red;
+  font-family: 'Markazi';
+}
+
+button {
+  background-color: #F4CE14;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #E0BB00;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.confirmation-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10; 
+}
