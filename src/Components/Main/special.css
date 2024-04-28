@@ -45,9 +45,10 @@
     
 }
 .dish-name{
-    font-family:'Markazi';
+    font-family:'Karla';
     font-size:1.12rem;
     margin-left: 0.5rem;
+    text-transform: uppercase;
 
 }   
 .dish-description{

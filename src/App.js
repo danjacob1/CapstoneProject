@@ -5,34 +5,26 @@ import Header from './Components/Header/header';
 import Main from './Components/Main/main';
 import Footer from './Components/Footer/footer';
 import Reservation from './Components/Reservation/reservation';
-import { Route,Routes, } from 'react-router-dom';
-import Testimonials from './Components/Main/testimonial';
-
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import OrderOnline from './Components/Order Online/orderOnline';
+import ConstructionPage from './Components/Login/logIn';
+import Scrolltotop from './Components/OtheComponents/scrolltotop';
 function App() {
   return (
   <div>
-           
-         <Nav/>
-              
-               <Routes>
-                  <Route path='/home' element={
-                    <>
-                       <Header/>
-                       <Main/>
-                 </>
-              }>
-               </Route>
-
-                <Route path='Reservation'element={
-                  <Reservation/>
-                }>
-
-                  </Route>
-           </Routes>
-           
-          <Footer/>
-           
-  </div>
+  
+        <Scrolltotop/>
+        <Nav />
+        <Routes>
+          <Route path='/' element={<><Header/><Main/></>} />
+          <Route path='/Reservation' element={<Reservation />} />
+          <Route path='/Order Online' element={<OrderOnline/>}/>
+          <Route path='Log In' element={<ConstructionPage/>}/>
+        </Routes>
+        <Footer />
+        
+    
+    </div>
   );
 }
 

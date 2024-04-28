@@ -3,7 +3,9 @@
     display: flex;
     justify-content:center;
     height:35rem;
+    width:95%;
     margin-bottom: 5rem;
+    position: relative;
 }
 .article{
     display: flex;
@@ -57,3 +59,17 @@
     z-index: 1;
 
 }
+
+.lemon {
+    position: absolute;
+    border-radius: 50%; 
+    animation: bounce 8s infinite; 
+  }
+  
+ @keyframes bounce {
+    0% { top: 0; left: 0; }
+    25% { top: 0; left: 100%; }
+    50% { top: 100%; left: 100%; }
+    75% { top: 100%; left: 0; }
+    100% { top: 0; left: 0; }
+  }

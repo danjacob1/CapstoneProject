@@ -3,7 +3,9 @@ import bruschetta from '../../Util/icons_assets/gourmet-5619887_640.jpg';
 import salad from '../../Util/icons_assets/greek salad.jpg';
 import desert from '../../Util/icons_assets/lemon dessert.jpg';
 import scooter from '../../Util/icons_assets/icons8-scooter-delivery-53.png'
-import './special.css'
+import './special.css' 
+import { Link } from "react-router-dom";
+
 const items = [
     {
       title: "Bruschetta",
@@ -49,7 +51,7 @@ const Specials=()=>{
            <div className="special-section" id="Specials">
             <div className="top-section">
                <h1 className="section-title">Special</h1>
-               <button className="btn">Online Menu</button>
+             <Link to={"/Order Online"}> <button className="btn">Online Menu</button> </Link> 
             </div>
            <Cards arraylist={items}/>
             </div>

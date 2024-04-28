@@ -5,6 +5,9 @@
      border: 1px solid;
      position:fixed;
      z-index:100;
+     width:100%;
+     top:0;
+     left:0;   
      background-color: white;
      width:100%;
 
@@ -13,36 +16,53 @@
     display: flex;
     width: 30rem;
     justify-content:center;
+    
 }
 .logo{
     margin-left:5rem;
+  
     
 }
 .nav-links{
     display: flex;
-    width: 70rem;
-    justify-content:space-around;
-    margin-right:18rem;
+    flex: 1;
+    max-width:70rem;
     list-style-type: none;
+    justify-content:space-around;
 }
 .nav-links li a{
     font-family: 'Markazi Text', serif;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
+    transition: border-bottom-width 0.1s ease;
+
+   
 }
 
+.nav-links li a:hover {
+    border-bottom: 2px solid ; 
+    border-bottom-width: 4px; 
+}
+.cart{
+    margin-right: 3rem;
+    cursor: pointer;
+}
+
+.invisible{
+ opacity:0;
+}
 @media( max-width:768px){
 .nav-links li a{
-    font-size:0.75rem;
+    font-size:1rem;
 }
 }
 @media( min-width:768px) and ( max-width:1324px){
    
 .nav-links li a{
- font-size: 1rem;
+ font-size: 1.5rem;
 }
 
 }

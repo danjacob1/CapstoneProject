@@ -1,12 +1,26 @@
 import React from "react";
+import { useState,useEffect } from "react";
 import './about.css'
 import img1  from'../../Util/icons_assets/Mario and Adrian A.jpg'
 import img2 from '../../Util//icons_assets/Mario and Adrian b.jpg'
+import lemon from '../../Util/icons_assets/icons8-limón-64.png'
+
+
+
+
 const About=()=>{
+
+
+
+
+
+
+
+
 
     return(
         <>
-          <section className="about-container">
+          <section className="about-container" id="About">
                 <article className="article">
                     <div className="article-left">
                     <h1>Little Lemon</h1>
@@ -18,6 +32,8 @@ const About=()=>{
                           <img src={img2} alt="adrian"></img>
                     </div>
                 </article>
+                    <img className="lemon" src={lemon}></img>
+                    
           </section>
          
         </>

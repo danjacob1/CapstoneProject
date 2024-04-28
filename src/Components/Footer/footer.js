@@ -5,9 +5,10 @@ import { HashLink } from "react-router-hash-link";
 import '../Footer/footer.css'
 
 
-const navigation=[{ text: 'Home', url: '#home' },
-{ text: 'About', url: '/home#About' },
-{ text: 'Menu', url: '/home#Specials' },
+const navigation=[
+{ text: 'Home', url: '/#home' },
+{ text: 'About', url: '/#About' },
+{ text: 'Menu', url: '/#Specials' },
 { text: 'Reservation', url: '/Reservation' },
 { text: 'Order Online', url: '/Order Online' },
 { text: 'Log In', url: '/Log in' }]
@@ -30,13 +31,13 @@ return(
         <>
              <div className="list-container">
               <h1 className="list-title">{props.title}</h1>
-              <ul>
+              <ul className="footer">
                   {props.arraylist.map((item)=>{
                     return(
                     <li key={item}>
-                        {props.text==="About"||props.text==="Menu"?
-                        (<HashLink smooth to={item.url}>{item.text}</HashLink>):
-                        (<Link to={item.url}>{item.text}</Link>)}
+                         {item.text==="Reservation"|| item.text==="Order Online" || item.text==="Log in"?
+                (<Link to={item.url}>{item.text}</Link>):
+                (<HashLink smooth to={item.url}>{item.text}</HashLink>)}
                     </li>
                     )
                     })
@@ -54,7 +55,7 @@ return(
     <>
           <div className="list-container">
             <h1 className="list-title">{props.title}</h1>
-            <ul>
+            <ul className="footer">
                 {
                     props.arraylist.map(item=>{
                         return(
@@ -90,7 +91,7 @@ return(
     <>
           <div className="list-container">
               <h1 className="list-title">{props.title}</h1>
-              <ul>
+              <ul className="footer">
                   {props.arraylist.map((item)=>{
                     return(
                     <li key={item}>
@@ -110,7 +111,7 @@ return(
 
 const Footer =()=>{
  return(
-  <>
+  <> 
       <footer className="footer-container">
        <div className="image">
            <img alt="restaurant" src={restaurant}></img>
