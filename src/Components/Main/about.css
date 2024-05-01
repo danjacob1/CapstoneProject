@@ -2,8 +2,7 @@
 .about-container{
     display: flex;
     justify-content:center;
-    height:35rem;
-    width:95%;
+    width:100%;
     margin-bottom: 5rem;
     position: relative;
 }
@@ -12,12 +11,12 @@
     justify-content: center;
     align-items:center;
     width:68rem;
+
 }
 .article-left{
     display: flex;
     flex-direction: column;
     flex: 1;
-    height:25rem;
     margin-left:5rem;
     
 }
@@ -73,3 +72,102 @@
     75% { top: 100%; left: 0; }
     100% { top: 0; left: 0; }
   }
+
+  @media (max-width: 576px) {
+
+   .article{
+    flex-direction: column;
+   }
+   .article-left{
+    margin: 0;
+   }
+   .article-left h1{
+    font-family:'Markazi';
+    font-size:1.4rem;
+    
+   
+}
+.article-left :nth-child(2){
+    font-size:1rem;
+    }
+.article-left :nth-child(3){
+    font-size: 0.8rem;
+}
+   .article-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .article-right :nth-child(1){
+    position: relative;
+    top: 0;
+    left:3rem;
+    z-index:1;
+}
+.article-right :nth-child(2){
+    position: relative;
+    top:-1rem;
+    left:0;
+    z-index:1;
+}
+ }
+
+ @media (min-width: 577px) and (max-width: 768px) {
+     
+   .article{
+    flex-direction: column;
+   }
+   .article-left{
+    margin: 0;
+   }
+   .article-left h1{
+    font-size:1.4rem;
+    
+   
+}
+.article-left :nth-child(2){
+    font-size:1rem;
+    }
+.article-left :nth-child(3){
+    font-size: 0.8rem;
+}
+   .article-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .article-right :nth-child(1){
+    position: relative;
+    top: 0;
+    left:3rem;
+    z-index:1;
+}
+.article-right :nth-child(2){
+    position: relative;
+    top:-1rem;
+    left:0;
+    z-index:1;
+}
+ }
+ 
+ @media (min-width: 769px) and (max-width: 1024px) {
+    .article-left{
+        margin: 0;
+       }
+       .article-right :nth-child(1){
+        top: 0;
+        left:3rem;
+        z-index:1;
+    }
+    .article-right :nth-child(2){
+        top:10rem;
+        left:0;
+        z-index:1;
+    }
+ }
+ 
+ @media (min-width: 1025px) and (max-width: 1200px) {
+    .article-left{
+        margin: 0;
+       }
+ }

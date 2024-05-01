@@ -3,6 +3,8 @@ import { Link} from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import logo from '../../Util/icons_assets/Logo.svg';
 import cartGif from '../../Util/icons8-carrito-de-compras.gif';
+import hamburger from '../../Util/icons8-hamburger-menu-100.png'
+
 import './nav.css'
 import CartModal from "./CartModal";
 import { useState } from "react";
@@ -28,7 +30,10 @@ const Nav=()=>{
        ];
      return (
         <nav className="navigation-container">
-            <div className="">
+          <div class="menu-icon">
+              <img src={hamburger} alt="hamburger"></img>
+            </div>
+            <div className="img-container">
           <img className="logo" src={logo} alt="logo"></img>
           </div>
     

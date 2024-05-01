@@ -4,24 +4,31 @@
     align-items: center;
     flex-direction: column;
     margin-top: 5rem;
+   
 
 }
 .testimonial-title{
     margin-bottom:0;
 }
 .section-container{
+   
     display:flex;
     align-items: center;
     justify-content: center;
     background-color: #F4CE14;
-    height:20rem;
     width:100%;
+    padding-top:1rem;
+    padding-bottom:1rem;
     
 }
 
 .items-container{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap:1rem;
+ 
 }
 .testimonial-container{
     display: flex;
@@ -57,4 +64,24 @@
 }
 .card-medium p{
  font-family: 'Karla';
+}
+
+
+@media (max-width: 576px) {
+
+   .items-container{
+    flex-direction: column;
+   }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    
 }
