@@ -43,7 +43,9 @@ const Reservation=()=>{
     return(
         (
             <div className="section">
+                <h1 class="list-title">Reserve a Table</h1>
             <div className="form-container">
+            
               <Formik
                 initialValues={initialValues}
                 validationSchema={validationScheme}

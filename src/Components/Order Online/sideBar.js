@@ -37,8 +37,10 @@ const Sidebar=()=>{
                 {sections.map((item,index)=>{
                   return(
                         <li key={index}>
-                             <img src={item.logo} alt='logo'></img>
-                         <HashLink smooth to={item.url}>{item.text}</HashLink>
+                         <HashLink smooth to={item.url}>
+                         <img src={item.logo} alt='logo'></img>
+                         <span className="text">{item.text}</span>
+                          </HashLink>
                         </li>)
                    
                 })}

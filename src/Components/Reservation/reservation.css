@@ -3,6 +3,7 @@
  
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   height:100vh;
   border:1px solid;
@@ -10,10 +11,18 @@
   
   
 }
+.list-title {
+  font-size: 1.5rem;
+  font-family: 'Markazi';
+  margin-bottom:2rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
 .form-container {
   position: relative;
   width: 30rem;
-  height: 42em;
+  height: 42rem;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -75,4 +84,24 @@ select {
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 10; 
+}
+
+@media (max-width: 576px) {
+  
+ 
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .image {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    
 }

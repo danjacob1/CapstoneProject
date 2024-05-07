@@ -2,17 +2,20 @@
 .footer-container {
     display: flex;
     position: relative;
-    justify-content:space-around;
+    justify-content:space-between;
     flex-direction:row;
     align-items:top;
-    background-color: #333333; /* Change the background color as needed */
-    color: gray; /* Change the text color as needed */
+    background-color: #333333; 
+    color: gray; 
     
-  
   }
+
   
   .list-container {
-  flex: 1;
+    display:flex;
+    flex-direction: column;
+    flex: auto;
+    align-items: ce;
   }
   
   .list-title {
@@ -55,3 +58,39 @@
 
   }
   
+
+
+
+@media (max-width: 576px) {
+  
+  .image {
+    display: none;
+  }
+ .footer-container{
+  display: flex;
+  justify-content:space-between;
+  border:1px solid;
+ }
+ .list-title {
+  font-size: 1rem;
+}
+.footer li {
+  font-size:0.70rem;
+ 
+}
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .image {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    
+}
