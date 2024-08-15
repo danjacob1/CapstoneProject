@@ -24,7 +24,6 @@ import { useContext} from 'react'
 
     fetchData().then((stock)=>{
       setProducts(stock)
-      console.log("Fetched data",products)
     })
     .catch(error=>{
       console.log("Error fetching data:",error)
